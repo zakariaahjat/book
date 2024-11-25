@@ -1,0 +1,76 @@
+.column1s {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 50px;
+    height: 550px; /* Should be removed. Only for demonstration */
+  text-align: center;
+
+  background-color: #FEFAE0;
+  
+  }
+  
+  /* Clear floats after the columns */
+  .rows:after:after {
+    content: "";
+    display: table;
+    clear: both;
+  
+  }
+  .tittle{
+    font-size: 55px;
+    text-align: left;
+    padding-left: 40px;
+    
+  }
+  @media screen and (max-width: 750px) {
+    .column1s {
+      width: 100%;
+      height:auto !important; /* Should be removed. Only for demonstration */
+    }
+  
+  
+  }
+  .tittles{
+    font-size: 55px;
+    text-align: left;
+    padding-left: 40px;
+    margin-top: 50px;
+    color: #626F47;
+  }
+  .paragraphes{
+    padding-left: 40px;
+    text-align: left;
+    color: #626F47;
+  }
+  .imgs{    
+width: 50%;
+border-radius: 15px;
+
+  }
+  .sssbooks{
+
+    color: #FEFAE0;
+    background-color: #79864575;
+  }
+  .container {
+    display: flex; /* Makes the divs align horizontally */
+    justify-content: space-between; /* Adds space between the divs */
+    align-items: center; /* Aligns the content vertically in the middle */
+    margin: 0 10px; /* Adds space around the divs */
+    padding: 10px;
+    text-align: center;
+    background-color: #626f476e;
+    color: #FEFAE0;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.vertical-line {
+    height: 50px; /* Adjust the height of the line */
+    width: 0.5px; /* Makes the line ultra-thin */
+    background-color: #FEFAE0; /* Color of the vertical line */
+    margin: 0 20px; /* Space around the line */
+}

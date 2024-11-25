@@ -1,0 +1,89 @@
+
+.product-section {
+    padding: 20px;
+    background-color: #F2EED7;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+
+  
+  .filter-button {
+    background-color: #626F47;
+    color: #FEFAE0;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .filter-button:hover {
+    background-color: #798645;
+  }
+  
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #FEFAE0;
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .product-card .imgp {
+    max-width: 100%; /* Ensure the image doesn't exceed card width */
+    height: auto;
+    border-radius: 8px;
+    max-height: 150px; /* Set a max height for the images */
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .product-card span {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Breakpoints */
+  @media (max-width: 1024px) {
+    .product-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .section-title{
+    color: #626F47;
+  }

@@ -1,0 +1,145 @@
+.column00 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 90px; /* Should be removed. Only for demonstration */
+text-align: center;
+background-color: #626F47;
+color: #FEFAE0;
+
+
+}
+.column11 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 90px; /* Should be removed. Only for demonstration */
+text-align: center;
+background-color: #626F47;
+color: #FEFAE0;
+
+
+}
+.column22 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 90px; /* Should be removed. Only for demonstration */
+text-align: center;
+background-color: #626F47;
+color: #FEFAE0;
+
+
+}
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 750px) {
+    .row{
+      display: none; /* Hide the menu button by default */
+    }
+    .column00 {
+      width: 100%;
+      height:auto !important; /* Should be removed. Only for demonstration */
+    }
+    .column11 {
+      width: 100%;
+      height:auto !important; /* Should be removed. Only for demonstration */
+    }
+    .column22 {
+      width: 100%;
+      height:auto !important; /* Should be removed. Only for demonstration */
+    }
+    .nav-text {
+      display: none; /* Hide text on small screens */
+    }
+    .nav-list {
+    display: flex;
+    flex-direction: column; /* Stack the list items vertically */
+  }
+  .img1{
+    width: 100px !important;
+    display: block;
+   
+    }
+ 
+  
+  }
+  .img1{
+  width: 70px;
+  display: flex;
+  justify-content: start;
+  }
+  /* General navbar styling */
+.navbar {
+  
+    padding: 10px 0;
+    
+  }
+  
+  /* Style the list to be horizontal */
+  .nav-list {
+    list-style-type: none;  /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex;          /* Make the list horizontal */
+    justify-content: center; /* Center the items */
+
+  }
+  
+  /* Style each list item */
+  .nav-list li {
+    margin: 0 20px;  /* Add space between list items */
+   
+  }
+  
+  /* Style the links */
+  .nav-list li a {
+    color: #FEFAE0;      /* White text */
+    text-decoration: none;  /* Remove underline */
+    align-items: center; /* Align image and text on the same line */
+    padding: 5px 10px;
+    display: block;    /* Ensure the whole block is clickable */
+    font-size: 16px;
+    transition: background-color 0.3s ease;  /* Smooth hover effect */
+  }
+  
+  /* Hover effect */
+  .nav-list li a:hover {
+    background-color: #798645;  /* Change background on hover */
+    border-radius: 5px;     
+    color: #F2EED7;     /* Optional: rounded corners */
+  }
+ .B1{  
+    background-color: transparent;   /*Green */
+    border: 2px solid #FEFAE0;
+    color: #FEFAE0; 
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 15px;
+   
+    transition-duration: 0.4s;
+    cursor: pointer;
+       display: flex; /* Align image and text horizontally */
+       align-items: center; /* Vertically center image and text */
+    
+ }
+ .B1:hover {
+    background-color: #798645;
+    color: #F2EED7;
+  }
+  .button-icon{
+    margin-right: 8px;
+  } /* Basic button styles */
+  .menu-icon {
+    display: none; /* Hide the menu button by default */
+  }

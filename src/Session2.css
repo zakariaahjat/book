@@ -1,0 +1,94 @@
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #626F47;
+    
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .cards2 {
+    min-width: 300px;
+    max-width: 300px;
+    margin: 0 10px;
+    background-color: #FEFAE0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(98, 111, 71,0.1);
+    padding: 20px;
+    text-align: center;
+    
+  }
+  
+  .cards2 .imgs2 {
+    max-width: 100%;
+    border-radius: 8px;
+    
+    height: auto;
+   
+    max-height: 150px; /* Set a max height for the images */
+  }
+  
+  /* Navigation buttons */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  .Tittles2{
+color: #FEFAE0 ;
+
+  }
+
+  
+  .add-to-cart {
+    padding: 10px 15px;
+    background-color: #626F47;
+    color: #FEFAE0;
+    border: none;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart:hover{
+    background-color: #798645;
+  }
+  .See-more {
+    padding: 10px 15px; /* Adjust padding for better spacing */
+    background-color: #FEFAE0; /* Green background color */
+    color: #798645; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for hover effects */
+    width:25% ;
+  }
+  
+  .see-more:hover {
+    background-color: #798645; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  .ppps2{
+    color: #FEFAE0;
+    border-bottom: #FEFAE0;
+    width: 70%;
+    border-bottom: 1px solid  #FEFAE0;;
+    padding-bottom: 30px;
+  }

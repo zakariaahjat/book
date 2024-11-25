@@ -1,0 +1,58 @@
+.testimonials-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonials-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .testimonial {
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 15px;
+  }
+  
+  .testimonial-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Makes the image a circle */
+    object-fit: cover; /* Ensures the image fits well within the circle */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for the image */
+  }
+  
+  .quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .author {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #777;
+  }
+  
+  .testimonial::before {
+    content: "“";
+    font-size: 2rem;
+    color: #ff7e00; /* Accent color */
+  }
+  
+  .testimonial::after {
+    content: "”";
+    font-size: 2rem;
+    color: #ff7e00; /* Accent color */
+  }
+  

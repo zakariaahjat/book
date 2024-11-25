@@ -1,0 +1,102 @@
+.column2x {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 90px; /* Should be removed. Only for demonstration */
+  text-align: center;
+  background-color: #626F47;
+  color: #FEFAE0;
+  
+  
+  }
+
+    /* Clear floats after the columns */
+    .rowv:after {
+      content: "";
+      display: table;
+      clear: both;
+  
+    }
+    .rowv {
+        display: none; /* Hide the menu button by default */
+    
+      }
+    
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 750px) {
+      .rowv{
+        display: block; /* Hide the menu button by default */
+      }
+    
+    
+   
+   
+    
+    }
+    .pic1{
+        width: 50px;
+        display: flex;
+        justify-content: start;
+    }
+    #menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease, opacity 1s ease; /* Changed to 1s */
+        
+        opacity: 0;
+
+    }
+    
+    #menu.visible {
+        max-height: 200px; /* Adjust based on your menu content */
+        opacity: 1;
+        animation: fadeIn 1s ease forwards, scaleUp 0.5s ease forwards !important; /* Add animations */
+    }
+    /* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.95); /* Start slightly smaller */
+    }
+    to {
+        transform: scale(1); /* End at original size */
+    }
+}
+    .hidden {
+        display: none;
+    }
+    .bbbb{
+        background-color: transparent;
+        border: none;
+    }
+   
+    .menu{
+        background-color: #626F47;
+        color: #FEFAE0;
+    }
+    .nav-list1 li a {
+        color: #FEFAE0;      /* White text */
+        text-decoration: none;  /* Remove underline */
+        align-items: center; /* Align image and text on the same line */
+        padding: 10px 20px;
+        display: block;    /* Ensure the whole block is clickable */
+        font-size: 16px;
+        transition: background-color 0.3s ease;  /* Smooth hover effect */
+      }
+      .nav-list1 li a:hover {
+        background-color: #798645;  /* Change background on hover */
+        border-radius: 5px;     
+        color: #F2EED7;     /* Optional: rounded corners */
+      }
+      .icon{
+        margin-right: 10px;
+      }
+      

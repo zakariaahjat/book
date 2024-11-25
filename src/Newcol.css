@@ -1,0 +1,70 @@
+.column0{
+    float: left;
+    width: 33.3333%;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+  text-align: center;
+  background-color:  #FEFAE0;
+  color: #626F47 ;display: flex;
+  justify-content: center;
+
+}
+.row000:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+  .row000{
+    
+  background-color:  #FEFAE0;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 750px) {
+ 
+    .column0 {
+      width: 100%;
+      height:auto !important; /* Should be removed. Only for demonstration */
+    }
+    
+  
+  }
+
+  .card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Image covering the top */
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+  
+  /* Text at the bottom of the card */
+  .card-name {
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #626F47;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Card hover effect */
+  .card:hover {
+  
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .titl{
+    color:#626F47 ;
+  }
